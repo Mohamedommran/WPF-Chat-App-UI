@@ -1,0 +1,43 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="ListViewItem" x:Key="ContactCard">
+        <Style.Triggers>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="#292b2f"></Setter>
+            </Trigger>
+        </Style.Triggers>
+        <Setter Property="Background" Value="#393b40"></Setter>
+        <Setter Property="Template">
+            <Setter.Value >
+                <ControlTemplate TargetType="ListViewItem">
+                    <Border Background="{TemplateBinding Background}"
+                        Height="50"
+                        CornerRadius="4"
+                        Margin="8,2,8,2">
+                        <StackPanel Orientation="Horizontal" 
+                                    Margin="10,0,0,0">
+                            <Ellipse Height="30" Width="30">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource ="{Binding ImageSource}"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <StackPanel>
+                                <Label Content="{Binding Username}"
+                                       Foreground="White">
+                                </Label>
+                                <Label Content="{Binding LastMessage}"
+                                       Foreground="Gray"
+                                       FontSize="10">
+                                    
+                                </Label>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                    
+                </ControlTemplate>
+            </Setter.Value>
+            
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
