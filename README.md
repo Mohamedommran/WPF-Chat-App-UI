@@ -3,6 +3,6 @@ WPF C#  Modern Chat App UI using WPF and C# with some custom controls and custom
 
 Live Screenshot 
 <p align="center">
-  <img align="center" src="https://imgur.com/nkhGmXe"" width="950" height="600" title="ScreenShot from the app ">
+  <img align="center" src="https://imgur.com/nkhGmXe.jpeg"" width="950" height="600" title="ScreenShot from the app ">
 </p>
 
